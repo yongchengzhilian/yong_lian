@@ -1,0 +1,42 @@
+2019-12-30 20:59:02.390 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-IDNHVKB with PID 11308 (D:\product\yonglian\yong_lian\aidou\aidou-api\target\classes started by 1 in D:\product\yonglian\yong_lian\aidou)
+2019-12-30 20:59:02.395 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2019-12-30 20:59:13.015 [main] INFO  com.aidou.api.ApiApplication - Started ApiApplication in 11.412 seconds (JVM running for 12.738)
+2019-12-30 21:00:00.278 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：goBackToUser 携带的请求数据:{}
+2019-12-30 21:00:00.284 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - goBackToUser请求结束，耗时：8ms
+2019-12-30 21:00:00.397 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：refreshDataByCachaToDb 携带的请求数据:{}
+2019-12-30 21:00:01.403 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - refreshDataByCachaToDb请求结束，耗时：1006ms
+2019-12-30 21:01:19.685 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-IDNHVKB with PID 11012 (D:\product\yonglian\yong_lian\aidou\aidou-api\target\classes started by 1 in D:\product\yonglian\yong_lian\aidou)
+2019-12-30 21:01:19.689 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2019-12-30 21:01:29.912 [main] INFO  com.aidou.api.ApiApplication - Started ApiApplication in 10.705 seconds (JVM running for 11.622)
+2019-12-30 21:02:20.572 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-ui.html
+2019-12-30 21:02:20.573 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.618 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/springfox.css
+2019-12-30 21:02:20.618 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.619 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/swagger-ui.css
+2019-12-30 21:02:20.619 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.620 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/springfox.js
+2019-12-30 21:02:20.620 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.620 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js
+2019-12-30 21:02:20.620 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.620 [http-nio-8088-exec-9] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/swagger-ui-bundle.js
+2019-12-30 21:02:20.620 [http-nio-8088-exec-9] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.831 [http-nio-8088-exec-3] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-resources/configuration/ui
+2019-12-30 21:02:20.831 [http-nio-8088-exec-3] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.857 [http-nio-8088-exec-2] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/favicon-32x32.png
+2019-12-30 21:02:20.857 [http-nio-8088-exec-2] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.907 [http-nio-8088-exec-4] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-resources/configuration/security
+2019-12-30 21:02:20.907 [http-nio-8088-exec-4] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.920 [http-nio-8088-exec-5] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-resources
+2019-12-30 21:02:20.921 [http-nio-8088-exec-5] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.954 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/v2/api-docs
+2019-12-30 21:02:20.954 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:20.979 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2
+2019-12-30 21:02:20.980 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:21.432 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2
+2019-12-30 21:02:21.432 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2
+2019-12-30 21:02:21.432 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:21.432 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:02:21.433 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2
+2019-12-30 21:02:21.434 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2019-12-30 21:04:24.250 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2
+2019-12-30 21:04:24.250 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - 未拦截

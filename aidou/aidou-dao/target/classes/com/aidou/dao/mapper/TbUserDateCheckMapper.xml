@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidou.dao.mapper.TbUserDateCheckMapper" >
+  <resultMap id="BaseResultMap" type="com.aidou.dao.entity.TbUserDateCheck" >
+    <id column="uid" property="uid" jdbcType="BIGINT" />
+    <result column="wechat" property="wechat" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="income" property="income" jdbcType="CHAR" />
+    <result column="education" property="education" jdbcType="CHAR" />
+    <result column="house_car" property="houseCar" jdbcType="CHAR" />
+    <result column="marriage" property="marriage" jdbcType="CHAR" />
+    <result column="town" property="town" jdbcType="CHAR" />
+    <result column="weight" property="weight" jdbcType="INTEGER" />
+    <result column="height" property="height" jdbcType="INTEGER" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+    <result column="work" property="work" jdbcType="VARCHAR" />
+    <result column="school" property="school" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="remarks" property="remarks" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="interest" property="interest" jdbcType="VARCHAR" />
+    <result column="favorite_ta" property="favoriteTa" jdbcType="VARCHAR" />
+    <result column="photo" property="photo" jdbcType="VARCHAR" />
+    <result column="top_image" property="topImage" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    uid, wechat, mobile, income, education, house_car, marriage, town, weight, height, 
+    created, updated, work, school, status, remarks, content, interest, favorite_ta, 
+    photo, top_image
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aidou.dao.entity.TbUserDateCheckExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_user_date_check
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_user_date_check
+    where uid = #{uid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from tb_user_date_check
+    where uid = #{uid,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.aidou.dao.entity.TbUserDateCheckExample" >
+    delete from tb_user_date_check
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.aidou.dao.entity.TbUserDateCheck" >
+    insert into tb_user_date_check (uid, wechat, mobile, 
+      income, education, house_car, 
+      marriage, town, weight, height, 
+      created, updated, work, 
+      school, status, remarks, 
+      content, interest, favorite_ta, 
+      photo, top_image)
+    values (#{uid,jdbcType=BIGINT}, #{wechat,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, 
+      #{income,jdbcType=CHAR}, #{education,jdbcType=CHAR}, #{houseCar,jdbcType=CHAR}, 
+      #{marriage,jdbcType=CHAR}, #{town,jdbcType=CHAR}, #{weight,jdbcType=INTEGER}, #{height,jdbcType=INTEGER}, 
+      #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, #{work,jdbcType=VARCHAR}, 
+      #{school,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{remarks,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{interest,jdbcType=VARCHAR}, #{favoriteTa,jdbcType=VARCHAR}, 
+      #{photo,jdbcType=VARCHAR}, #{topImage,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aidou.dao.entity.TbUserDateCheck" >
+    insert into tb_user_date_check
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="wechat != null" >
+        wechat,
+      </if>
+      <if test="mobile != null" >
+        mobile,
+      </if>
+      <if test="income != null" >
+        income,
+      </if>
+      <if test="education != null" >
+        education,
+      </if>
+      <if test="houseCar != null" >
+        house_car,
+      </if>
+      <if test="marriage != null" >
+        marriage,
+      </if>
+      <if test="town != null" >
+        town,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="height != null" >
+        height,
+      </if>
+      <if test="created != null" >
+        created,
+      </if>
+      <if test="updated != null" >
+        updated,
+      </if>
+      <if test="work != null" >
+        work,
+      </if>
+      <if test="school != null" >
+        school,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="remarks != null" >
+        remarks,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="interest != null" >
+        interest,
+      </if>
+      <if test="favoriteTa != null" >
+        favorite_ta,
+      </if>
+      <if test="photo != null" >
+        photo,
+      </if>
+      <if test="topImage != null" >
+        top_image,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        #{uid,jdbcType=BIGINT},
+      </if>
+      <if test="wechat != null" >
+        #{wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="income != null" >
+        #{income,jdbcType=CHAR},
+      </if>
+      <if test="education != null" >
+        #{education,jdbcType=CHAR},
+      </if>
+      <if test="houseCar != null" >
+        #{houseCar,jdbcType=CHAR},
+      </if>
+      <if test="marriage != null" >
+        #{marriage,jdbcType=CHAR},
+      </if>
+      <if test="town != null" >
+        #{town,jdbcType=CHAR},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=INTEGER},
+      </if>
+      <if test="height != null" >
+        #{height,jdbcType=INTEGER},
+      </if>
+      <if test="created != null" >
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updated != null" >
+        #{updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="work != null" >
+        #{work,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="remarks != null" >
+        #{remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="interest != null" >
+        #{interest,jdbcType=VARCHAR},
+      </if>
+      <if test="favoriteTa != null" >
+        #{favoriteTa,jdbcType=VARCHAR},
+      </if>
+      <if test="photo != null" >
+        #{photo,jdbcType=VARCHAR},
+      </if>
+      <if test="topImage != null" >
+        #{topImage,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.aidou.dao.entity.TbUserDateCheckExample" resultType="java.lang.Integer" >
+    select count(*) from tb_user_date_check
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_user_date_check
+    <set >
+      <if test="record.uid != null" >
+        uid = #{record.uid,jdbcType=BIGINT},
+      </if>
+      <if test="record.wechat != null" >
+        wechat = #{record.wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobile != null" >
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.income != null" >
+        income = #{record.income,jdbcType=CHAR},
+      </if>
+      <if test="record.education != null" >
+        education = #{record.education,jdbcType=CHAR},
+      </if>
+      <if test="record.houseCar != null" >
+        house_car = #{record.houseCar,jdbcType=CHAR},
+      </if>
+      <if test="record.marriage != null" >
+        marriage = #{record.marriage,jdbcType=CHAR},
+      </if>
+      <if test="record.town != null" >
+        town = #{record.town,jdbcType=CHAR},
+      </if>
+      <if test="record.weight != null" >
+        weight = #{record.weight,jdbcType=INTEGER},
+      </if>
+      <if test="record.height != null" >
+        height = #{record.height,jdbcType=INTEGER},
+      </if>
+      <if test="record.created != null" >
+        created = #{record.created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updated != null" >
+        updated = #{record.updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.work != null" >
+        work = #{record.work,jdbcType=VARCHAR},
+      </if>
+      <if test="record.school != null" >
+        school = #{record.school,jdbcType=VARCHAR},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.remarks != null" >
+        remarks = #{record.remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="record.content != null" >
+        content = #{record.content,jdbcType=VARCHAR},
+      </if>
+      <if test="record.interest != null" >
+        interest = #{record.interest,jdbcType=VARCHAR},
+      </if>
+      <if test="record.favoriteTa != null" >
+        favorite_ta = #{record.favoriteTa,jdbcType=VARCHAR},
+      </if>
+      <if test="record.photo != null" >
+        photo = #{record.photo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.topImage != null" >
+        top_image = #{record.topImage,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_user_date_check
+    set uid = #{record.uid,jdbcType=BIGINT},
+      wechat = #{record.wechat,jdbcType=VARCHAR},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      income = #{record.income,jdbcType=CHAR},
+      education = #{record.education,jdbcType=CHAR},
+      house_car = #{record.houseCar,jdbcType=CHAR},
+      marriage = #{record.marriage,jdbcType=CHAR},
+      town = #{record.town,jdbcType=CHAR},
+      weight = #{record.weight,jdbcType=INTEGER},
+      height = #{record.height,jdbcType=INTEGER},
+      created = #{record.created,jdbcType=TIMESTAMP},
+      updated = #{record.updated,jdbcType=TIMESTAMP},
+      work = #{record.work,jdbcType=VARCHAR},
+      school = #{record.school,jdbcType=VARCHAR},
+      status = #{record.status,jdbcType=INTEGER},
+      remarks = #{record.remarks,jdbcType=VARCHAR},
+      content = #{record.content,jdbcType=VARCHAR},
+      interest = #{record.interest,jdbcType=VARCHAR},
+      favorite_ta = #{record.favoriteTa,jdbcType=VARCHAR},
+      photo = #{record.photo,jdbcType=VARCHAR},
+      top_image = #{record.topImage,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aidou.dao.entity.TbUserDateCheck" >
+    update tb_user_date_check
+    <set >
+      <if test="wechat != null" >
+        wechat = #{wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="income != null" >
+        income = #{income,jdbcType=CHAR},
+      </if>
+      <if test="education != null" >
+        education = #{education,jdbcType=CHAR},
+      </if>
+      <if test="houseCar != null" >
+        house_car = #{houseCar,jdbcType=CHAR},
+      </if>
+      <if test="marriage != null" >
+        marriage = #{marriage,jdbcType=CHAR},
+      </if>
+      <if test="town != null" >
+        town = #{town,jdbcType=CHAR},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=INTEGER},
+      </if>
+      <if test="height != null" >
+        height = #{height,jdbcType=INTEGER},
+      </if>
+      <if test="created != null" >
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updated != null" >
+        updated = #{updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="work != null" >
+        work = #{work,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        school = #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="remarks != null" >
+        remarks = #{remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="interest != null" >
+        interest = #{interest,jdbcType=VARCHAR},
+      </if>
+      <if test="favoriteTa != null" >
+        favorite_ta = #{favoriteTa,jdbcType=VARCHAR},
+      </if>
+      <if test="photo != null" >
+        photo = #{photo,jdbcType=VARCHAR},
+      </if>
+      <if test="topImage != null" >
+        top_image = #{topImage,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aidou.dao.entity.TbUserDateCheck" >
+    update tb_user_date_check
+    set wechat = #{wechat,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      income = #{income,jdbcType=CHAR},
+      education = #{education,jdbcType=CHAR},
+      house_car = #{houseCar,jdbcType=CHAR},
+      marriage = #{marriage,jdbcType=CHAR},
+      town = #{town,jdbcType=CHAR},
+      weight = #{weight,jdbcType=INTEGER},
+      height = #{height,jdbcType=INTEGER},
+      created = #{created,jdbcType=TIMESTAMP},
+      updated = #{updated,jdbcType=TIMESTAMP},
+      work = #{work,jdbcType=VARCHAR},
+      school = #{school,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      remarks = #{remarks,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      interest = #{interest,jdbcType=VARCHAR},
+      favorite_ta = #{favoriteTa,jdbcType=VARCHAR},
+      photo = #{photo,jdbcType=VARCHAR},
+      top_image = #{topImage,jdbcType=VARCHAR}
+    where uid = #{uid,jdbcType=BIGINT}
+  </update>
+</mapper>

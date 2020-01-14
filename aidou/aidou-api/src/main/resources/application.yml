@@ -1,0 +1,111 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /app
+  tomcat:
+    uri-encoding: UTF-8
+    max-http-header-size: 8192
+
+
+
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 2MB
+  application:
+    name: aidou-api
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+  profiles:
+    active: dev
+
+
+mybatis:
+  type-aliases-package: com.aidou.dao.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+mapper:
+  not-empty: true
+  identity: MYSQL
+pagehelper:
+  helper-dialect: mysql
+  reasonable: false
+  supportMethodsArguments: true
+  params: count=countSql
+
+#图片保存地址
+IMAGE_SERVER_URL: http://cdn.aidou.online/
+
+
+
+
+logging:
+  level:
+    com.aidou.dao.mapper: debug
+  config: classpath:logback.xml
+
+
+http.client:
+  maxTotal: 100 #最大连接数
+
+  defaultMaxPerRoute: 20 #并发数
+
+  connectTimeout: 1000 #创建连接的最长时间
+
+  connectionRequestTimeout: 500 #从连接池中获取到连接的最长时间
+
+  socketTimeout: 10000 #数据传输的最长时间
+
+  staleConnectionCheckEnabled: true #提交请求前测试连接是否可用
+
+
+
+
+# 设定ftl文件路径
+  spring.freemarker.template-loader-path=classpath: /templates
+  spring.freemarker.cache: false
+  spring.freemarker.charset: UTF-8
+  spring.freemarker.check-template-location: true
+  spring.freemarker.content-type: text/html
+  spring.freemarker.expose-request-attributes: false
+  spring.freemarker.expose-session-attributes: false
+  spring.freemarker.request-context-attribute: request
+  spring.freemarker.suffix: .ftl
+
+
+
+
+
+wechat:
+  appid: wx938259363d663a46
+  secret: 953e65efd2edbbf948f8e47161490545
+  serviceId: wxb55e464ea69e3136
+  serviceSecret: 1fab3b5adc921e73d3cde94ac1796cca
+
+
+wechatPay:
+    WX_APPID: wx938259363d663a46
+    WX_APPSECRET: 953e65efd2edbbf948f8e47161490545
+    WX_SIGNATURE: 6gbyqEawwEQ1iLzYMvraNzRb1Q8ac5Ym
+    WX_AEPIV3: kKGTPIkdrmhIzeV8lfHnsbKFCIZ6NFls
+    notifyurl: https://www.aidou.online/api/app/wxPay/notifyCallback
+
+
+
+
+
+
+
+
+
+
+
+
+

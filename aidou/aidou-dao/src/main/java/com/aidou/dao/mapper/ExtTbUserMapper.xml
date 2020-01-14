@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidou.dao.mapper.ExtTbUserMapper">
+
+    <select id="selectLastTimeUserList" resultType="com.aidou.dao.entity.TbUserLastTimeVo"
+            parameterType="java.lang.Integer">
+       SELECT
+        tb_user.uid,
+        tb_user_img.img AS topImage,tb_user.nikename,
+        tb_user.town AS address,
+        tb_user.birthday,
+        tb_user.sex,
+        tb_user.avatarurl,
+        tb_user.house_car,
+        tb_user.education,
+        tb_user.marriage,
+        tb_user.height,
+        tb_user.work,
+        tb_user_content.content,
+        tb_user.last_time
+        FROM tb_user
+        LEFT JOIN tb_user_img ON tb_user.uid=tb_user_img.uid
+        LEFT JOIN tb_user_content  ON tb_user.uid=tb_user_content.uid
+        WHERE  tb_user_img.img_type='TOP'
+        AND tb_user.sex=${sex}
+        AND tb_user.account_status=1
+        AND tb_user.status=3
+        ORDER BY tb_user.updated DESC
+    </select>
+
+</mapper>
