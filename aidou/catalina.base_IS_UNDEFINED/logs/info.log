@@ -1,42 +1,56 @@
-2019-12-30 20:59:02.390 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-IDNHVKB with PID 11308 (D:\product\yonglian\yong_lian\aidou\aidou-api\target\classes started by 1 in D:\product\yonglian\yong_lian\aidou)
-2019-12-30 20:59:02.395 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
-2019-12-30 20:59:13.015 [main] INFO  com.aidou.api.ApiApplication - Started ApiApplication in 11.412 seconds (JVM running for 12.738)
-2019-12-30 21:00:00.278 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：goBackToUser 携带的请求数据:{}
-2019-12-30 21:00:00.284 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - goBackToUser请求结束，耗时：8ms
-2019-12-30 21:00:00.397 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：refreshDataByCachaToDb 携带的请求数据:{}
-2019-12-30 21:00:01.403 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - refreshDataByCachaToDb请求结束，耗时：1006ms
-2019-12-30 21:01:19.685 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-IDNHVKB with PID 11012 (D:\product\yonglian\yong_lian\aidou\aidou-api\target\classes started by 1 in D:\product\yonglian\yong_lian\aidou)
-2019-12-30 21:01:19.689 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
-2019-12-30 21:01:29.912 [main] INFO  com.aidou.api.ApiApplication - Started ApiApplication in 10.705 seconds (JVM running for 11.622)
-2019-12-30 21:02:20.572 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-ui.html
-2019-12-30 21:02:20.573 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.618 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/springfox.css
-2019-12-30 21:02:20.618 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.619 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/swagger-ui.css
-2019-12-30 21:02:20.619 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.620 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/springfox.js
-2019-12-30 21:02:20.620 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.620 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js
-2019-12-30 21:02:20.620 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.620 [http-nio-8088-exec-9] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/swagger-ui-bundle.js
-2019-12-30 21:02:20.620 [http-nio-8088-exec-9] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.831 [http-nio-8088-exec-3] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-resources/configuration/ui
-2019-12-30 21:02:20.831 [http-nio-8088-exec-3] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.857 [http-nio-8088-exec-2] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/favicon-32x32.png
-2019-12-30 21:02:20.857 [http-nio-8088-exec-2] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.907 [http-nio-8088-exec-4] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-resources/configuration/security
-2019-12-30 21:02:20.907 [http-nio-8088-exec-4] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.920 [http-nio-8088-exec-5] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/swagger-resources
-2019-12-30 21:02:20.921 [http-nio-8088-exec-5] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.954 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/v2/api-docs
-2019-12-30 21:02:20.954 [http-nio-8088-exec-6] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:20.979 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2
-2019-12-30 21:02:20.980 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:21.432 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2
-2019-12-30 21:02:21.432 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2
-2019-12-30 21:02:21.432 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:21.432 [http-nio-8088-exec-8] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:02:21.433 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2
-2019-12-30 21:02:21.434 [http-nio-8088-exec-10] INFO  com.aidou.api.filter.AuthFilter - 未拦截
-2019-12-30 21:04:24.250 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2
-2019-12-30 21:04:24.250 [http-nio-8088-exec-7] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2020-01-15 16:02:55.523 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 51744 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:02:55.531 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 16:05:00.091 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 5480 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:05:00.096 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: pro
+2020-01-15 16:13:33.104 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 38264 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:13:33.117 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 16:13:57.315 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 43396 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:13:57.320 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 16:14:45.766 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 26980 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:14:45.772 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 16:17:02.665 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 19956 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:17:02.670 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: prod
+2020-01-15 16:20:01.425 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 30208 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:20:01.430 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: prod
+2020-01-15 16:49:52.067 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 18776 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 16:49:52.072 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 16:50:08.092 [main] INFO  com.aidou.api.ApiApplication - Started ApiApplication in 17.037 seconds (JVM running for 18.883)
+2020-01-15 16:54:48.844 [http-nio-8088-exec-2] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/wx/refreshToken/100028
+2020-01-15 16:54:48.845 [http-nio-8088-exec-2] INFO  com.aidou.api.filter.AuthFilter - 未拦截
+2020-01-15 16:54:49.678 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - No need to auth for public resource  :/app/user/status
+2020-01-15 16:54:49.987 [http-nio-8088-exec-1] INFO  com.aidou.api.filter.AuthFilter - auth success...
+2020-01-15 16:54:50.001 [http-nio-8088-exec-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：findCurrentUserStatus 携带的请求数据:{}
+2020-01-15 16:54:50.170 [http-nio-8088-exec-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：findRedCountByUid 携带的请求数据:{}
+2020-01-15 16:54:50.382 [http-nio-8088-exec-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - findRedCountByUid请求结束，耗时：212ms
+2020-01-15 16:54:50.383 [http-nio-8088-exec-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：selectNoticeCountByUid 携带的请求数据:{}
+2020-01-15 16:54:50.718 [http-nio-8088-exec-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - selectNoticeCountByUid请求结束，耗时：335ms
+2020-01-15 16:54:50.719 [http-nio-8088-exec-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - findCurrentUserStatus请求结束，耗时：727ms
+2020-01-15 17:00:00.764 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：goBackToUser 携带的请求数据:{}
+2020-01-15 17:00:00.767 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - goBackToUser请求结束，耗时：3ms
+2020-01-15 17:00:00.984 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：refreshDataByCachaToDb 携带的请求数据:{}
+2020-01-15 17:00:01.152 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - refreshDataByCachaToDb请求结束，耗时：168ms
+2020-01-15 18:00:00.484 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：goBackToUser 携带的请求数据:{}
+2020-01-15 18:00:00.484 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - goBackToUser请求结束，耗时：0ms
+2020-01-15 18:00:00.696 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：refreshDataByCachaToDb 携带的请求数据:{}
+2020-01-15 18:00:00.871 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - refreshDataByCachaToDb请求结束，耗时：175ms
+2020-01-15 19:00:00.349 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：goBackToUser 携带的请求数据:{}
+2020-01-15 19:00:00.575 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：addLine 携带的请求数据:{}
+2020-01-15 19:00:00.876 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - addLine请求结束，耗时：301ms
+2020-01-15 19:00:00.877 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：matchmakingResultMessage 携带的请求数据:{}
+2020-01-15 19:00:00.922 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：findOpenIdByUid 携带的请求数据:{}
+2020-01-15 19:00:00.995 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - findOpenIdByUid请求结束，耗时：73ms
+2020-01-15 19:00:02.272 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - matchmakingResultMessage请求结束，耗时：1395ms
+2020-01-15 19:00:02.272 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - goBackToUser请求结束，耗时：1923ms
+2020-01-15 19:00:02.486 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：refreshDataByCachaToDb 携带的请求数据:{}
+2020-01-15 19:00:02.649 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - refreshDataByCachaToDb请求结束，耗时：163ms
+2020-01-15 20:00:00.446 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：goBackToUser 携带的请求数据:{}
+2020-01-15 20:00:00.448 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - goBackToUser请求结束，耗时：2ms
+2020-01-15 20:00:00.674 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - 请求开始，方法：refreshDataByCachaToDb 携带的请求数据:{}
+2020-01-15 20:00:00.840 [pool-2-thread-1] INFO  com.aidou.api.interceptor.ControllerInterceptor - refreshDataByCachaToDb请求结束，耗时：166ms
+2020-01-15 20:25:18.854 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 55472 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 20:25:18.859 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 20:26:13.639 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 34708 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 20:26:13.657 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 20:26:58.730 [main] INFO  com.aidou.api.ApiApplication - Starting ApiApplication on DESKTOP-15B32IO with PID 1132 (started by zhaojianbo in D:\资料\outbao\yongcheng\dfcvbcvb-yong_lian-master\yong_lian\aidou)
+2020-01-15 20:26:58.734 [main] INFO  com.aidou.api.ApiApplication - The following profiles are active: dev
+2020-01-15 20:27:14.347 [main] INFO  com.aidou.api.ApiApplication - Started ApiApplication in 16.679 seconds (JVM running for 18.329)

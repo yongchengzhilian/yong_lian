@@ -1,9 +1,12 @@
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://rm-wz972i3v9coi4076h6o.mysql.rds.aliyuncs.com:3306/yonglian?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
-    username: ylian_user_root
-    password: 010203Aa
+#    url: jdbc:mysql://rm-wz972i3v9coi4076h6o.mysql.rds.aliyuncs.com:3306/aidou?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+    url: jdbc:mysql://39.104.130.168:3306/aidou?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+    username: root
+#    username: ylian_user_root
+#    password: 010203Aa
+    password: 010203aa
     druid:
       initial-size: 10
       min-idle: 10

@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aidou-api" />
+        <module name="aidou-librec" />
         <module name="aidou-common" />
         <module name="aidou-dao" />
-        <module name="aidou-librec" />
+        <module name="aidou-api" />
       </profile>
     </annotationProcessing>
   </component>
